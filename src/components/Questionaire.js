@@ -9,7 +9,7 @@ export default function Questionaire({
     <div className="mt-2">
       <div className="bg-white text-purple-800 p-6 rounded shadow-lg float-none">
         <h2
-          className="text-xl "
+          className="text-lg sm:text-xl"
           dangerouslySetInnerHTML={{ __html: question }}
         />
       </div>

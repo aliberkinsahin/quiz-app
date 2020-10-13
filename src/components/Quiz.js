@@ -74,7 +74,7 @@ function Quiz({ apiUrl, category, reconfigure }) {
             Your score is {score}/{questions.length}
           </h1>
           <button
-            className="font-bold text-white bg-indigo-500 hover:bg-indigo-700 w-1/2 my-4 p-4 rounded shadow-lg"
+            className="font-bold text-white bg-blue-500 hover:bg-blue-700 w-1/2 my-4 p-4 rounded shadow-lg"
             onClick={handleRestart}
           >
             Restart
@@ -90,10 +90,10 @@ function Quiz({ apiUrl, category, reconfigure }) {
         !isRestarting &&
         currentQuestionIndex !== questions.length ? (
         <>
-          <h1 className="text-white text-3xl text-center">
+          <h1 className="text-white text-2xl sm:text-3xl text-center">
             -- {category} --
           </h1>
-          <h1 className="mt-3 text-white text-2xl text-center">
+          <h1 className="mt-3 text-white text-xl sm:text-2xl text-center">
             Question {currentQuestionIndex + 1}/{questions.length}
           </h1>
           <Questionaire
