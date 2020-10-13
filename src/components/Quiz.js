@@ -67,7 +67,7 @@ function Quiz({ apiUrl, category, reconfigure }) {
   }, [isRestarting, questions]);
 
   return (
-    <div className="container p-5 w-screen sm:max-w-3xl">
+    <div className="container p-5 w-screen h-screen sm:max-w-3xl">
       {gameEnd && !isRestarting ? (
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-2xl text-white text-center mb-2">
@@ -89,7 +89,7 @@ function Quiz({ apiUrl, category, reconfigure }) {
       ) : questions.length > 0 &&
         !isRestarting &&
         currentQuestionIndex !== questions.length ? (
-        <>
+        <div className="">
           <h1 className="text-white text-2xl sm:text-3xl text-center">
             -- {category} --
           </h1>
@@ -101,7 +101,7 @@ function Quiz({ apiUrl, category, reconfigure }) {
             handleAnswer={handleAnswer}
             showAnswers={showAnswers}
           />
-        </>
+        </div>
       ) : (
         <h1 className="text-2xl text-white text-center mt-10">
           Fetching questions...

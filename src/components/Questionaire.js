@@ -9,7 +9,7 @@ export default function Questionaire({
     <div className="mt-2">
       <div className="bg-white text-purple-800 p-6 rounded shadow-lg float-none">
         <h2
-          className="text-lg sm:text-xl"
+          className="text-md sm:text-xl"
           dangerouslySetInnerHTML={{ __html: question }}
         />
       </div>
@@ -18,7 +18,7 @@ export default function Questionaire({
           <button
             key={_answer}
             onClick={() => handleAnswer(_answer)}
-            className={`w-4/5 md:w-5/12 p-4 my-2 font-semibold rounded shadow-lg ${
+            className={`w-4/5 md:w-5/12 p-4 my-2 font-semibold rounded shadow-lg text-sm sm:text-xl ${
               showAnswers
                 ? _answer === correct_answer
                   ? "bg-green-500 text-white"
