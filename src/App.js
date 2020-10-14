@@ -119,7 +119,6 @@ function App() {
     setBgColor(bgForCategory(categoryName));
   }, [category, difficulty, amount, categoryName]);
 
-  console.log(url);
   return (
     <div className={`${bgColor} h-screen flex flex-col items-center`}>
       <h1 className="text-3xl font-bold text-white p-3 mt-3 border border-gray-300 text-center rounded-lg">
